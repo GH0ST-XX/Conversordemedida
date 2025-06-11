@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas Elegante</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Conversor de Medidas</h1>
+            <div class="theme-switcher">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
+
+        <main class="converters-grid">
+            <div class="converter-card">
+                <h2>Comprimento</h2>
+                <div class="converter-body">
+                    <div class="input-group">
+                        <input type="number" id="length-input" placeholder="0">
+                        <select id="length-from">
+                            <option value="meters">Metros (m)</option>
+                            <option value="kilometers">Quilômetros (km)</option>
+                            <option value="centimeters">Centímetros (cm)</option>
+                            <option value="millimeters">Milímetros (mm)</option>
+                            <option value="miles">Milhas</option>
+                            <option value="yards">Jardas</option>
+                            <option value="feet">Pés</option>
+                            <option value="inches">Polegadas</option>
+                        </select>
+                    </div>
+                    <div class="equals-sign">=</div>
+                    <div class="input-group">
+                        <input type="text" id="length-output" readonly>
+                        <select id="length-to">
+                            <option value="kilometers">Quilômetros (km)</option>
+                            <option value="meters">Metros (m)</option>
+                            <option value="centimeters">Centímetros (cm)</option>
+                            <option value="millimeters">Milímetros (mm)</option>
+                            <option value="miles">Milhas</option>
+                            <option value="yards">Jardas</option>
+                            <option value="feet">Pés</option>
+                            <option value="inches">Polegadas</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="converter-card">
+                <h2>Temperatura</h2>
+                <div class="converter-body">
+                    <div class="input-group">
+                        <input type="number" id="temp-input" placeholder="0">
+                        <select id="temp-from">
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                        </select>
+                    </div>
+                    <div class="equals-sign">=</div>
+                    <div class="input-group">
+                        <input type="text" id="temp-output" readonly>
+                        <select id="temp-to">
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="converter-card">
+                <h2>Massa</h2>
+                <div class="converter-body">
+                    <div class="input-group">
+                        <input type="number" id="mass-input" placeholder="0">
+                        <select id="mass-from">
+                            <option value="kilograms">Quilogramas (kg)</option>
+                            <option value="grams">Gramas (g)</option>
+                            <option value="milligrams">Miligramas (mg)</option>
+                            <option value="pounds">Libras (lb)</option>
+                            <option value="ounces">Onças (oz)</option>
+                            <option value="arroba">Arroba (@)</option>
+                        </select>
+                    </div>
+                    <div class="equals-sign">=</div>
+                    <div class="input-group">
+                        <input type="text" id="mass-output" readonly>
+                        <select id="mass-to">
+                            <option value="grams">Gramas (g)</option>
+                            <option value="kilograms">Quilogramas (kg)</option>
+                            <option value="milligrams">Miligramas (mg)</option>
+                            <option value="pounds">Libras (lb)</option>
+                            <option value="ounces">Onças (oz)</option>
+                            <option value="arroba">Arroba (@)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="converter-card">
+                <h2>Volume</h2>
+                <div class="converter-body">
+                    <div class="input-group">
+                        <input type="number" id="volume-input" placeholder="0">
+                        <select id="volume-from">
+                            <option value="liters">Litros (L)</option>
+                            <option value="milliliters">Mililitros (mL)</option>
+                            <option value="cubic-meters">Metros cúbicos (m³)</option>
+                            <option value="gallons">Galões (US)</option>
+                        </select>
+                    </div>
+                    <div class="equals-sign">=</div>
+                    <div class="input-group">
+                        <input type="text" id="volume-output" readonly>
+                        <select id="volume-to">
+                            <option value="milliliters">Mililitros (mL)</option>
+                            <option value="liters">Litros (L)</option>
+                            <option value="cubic-meters">Metros cúbicos (m³)</option>
+                            <option value="gallons">Galões (US)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
